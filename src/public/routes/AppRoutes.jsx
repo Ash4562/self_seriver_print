@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import { Toaster } from "react-hot-toast";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import Loader from "../components/Loader";
 import ScrollToTop from "../components/ScrollToTop";
 import GenerateHotelsQr from "../pages/GenerateHotelsQr";
@@ -33,7 +33,7 @@ const OrderSuccessful = React.lazy(() =>
 const AppRoutes = () => {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Suspense fallback={<Loader />}>
           <ScrollToTop />
           <Toaster position="top-right" />
@@ -72,7 +72,7 @@ const AppRoutes = () => {
             </Routes>
           </div>{" "}
         </Suspense>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 };
