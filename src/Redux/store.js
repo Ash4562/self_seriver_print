@@ -6,7 +6,7 @@ import { OrderAPI } from "./API/OrdersAPI";
 import { PrintFilesAPI } from "./API/PrintFilesAPI";
 import { ProfileAPI } from "./API/ProfileAPI";
 import { AddressAPI } from "./API/AddressAPI";
-import { userApi } from "./hotelUserApi.jsx/userApi";
+import { userApi } from "./hotel/userApi";
 import hotelSlice from "./Slice/hotel/hotelSlice";
 // import { userApi } from "./hotelUserApi.jsx/userApi";
 

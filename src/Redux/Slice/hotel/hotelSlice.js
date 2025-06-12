@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { userApi } from '../../hotelUserApi.jsx/userApi';
+import { userApi } from '../../hotel/userApi';
 
 // Load hotelId from localStorage if it exists
 const storedHotelId = localStorage.getItem('shopid');

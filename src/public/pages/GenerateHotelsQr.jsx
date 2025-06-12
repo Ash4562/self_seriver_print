@@ -5,7 +5,7 @@
 
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { useGenerateQRMutation } from "../../redux/hotelUserApi.jsx/userApi";
+import { useGenerateQRMutation } from "../../Redux/hotel/userApi";
 // import { useGenerateQRMutation } from "../../redux/hotelUserApi.jsx/userApi";
 
 const GenerateHotelsQr = () => {

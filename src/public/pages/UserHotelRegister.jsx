@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 // import { useUserHotelRegisterMutation } from "../../redux/hotelUserApi.jsx/userApi";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-import { useUserHotelRegisterMutation } from "../../redux/hotelUserApi.jsx/userApi";
+import { useUserHotelRegisterMutation } from "../../Redux/hotel/userApi";
 
 
 const UserHotelRegister = () => {
