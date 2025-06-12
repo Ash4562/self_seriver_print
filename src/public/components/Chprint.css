@@ -1,0 +1,41 @@
+.swiper {
+  overflow: hidden;
+  position: relative;
+  --v-offset: 60px;
+  --curve-height: 120px;
+
+  &::before,
+  &::after {
+    content: "";
+    z-index: 99;
+    display: block;
+    background: white;
+    width: calc(100vw + 2 * var(--v-offset));
+    height: var(--curve-height);
+    position: absolute;
+    border-radius: 100%;
+    left: calc(-1 * var(--v-offset));
+    right: calc(-1 * var(--v-offset));
+  }
+
+  &::before {
+    top: calc(-0.7 * var(--curve-height));
+  }
+  &::after {
+    bottom: calc(-3.8 * var(--curve-height));
+  }
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 300px;
+  grid-auto-flow: column;
+  gap: 24px;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  padding: 0 60px;
+
+  img {
+    scroll-snap-align: center;
+  }
+}
